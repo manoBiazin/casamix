@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CasaMix</title>
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SWIPER CSS -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <a href="index.html">
+
+                <img src="images/mini-logo.png" alt="CasaMix Logo">
+
+            </a>
+
+        </div>
+
+        <!-- MENU -->
+
+        <nav class="nav-menu">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li>
+                    <a href="pages/destaques.html">Destaques</a>
+                </li>
+
+                <!-- DROPDOWN -->
+
+                <li class="dropdown">
+
+                    <button class="dropdown-button">
+
+                        Categorias
+
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="pages/cozinha.html">
+                            Cozinha
+                        </a>
+
+                        <a href="pages/organizacao.html">
+                            Organização
+                        </a>
+
+                        <a href="pages/decoracao.html">
+                            Decoração
+                        </a>
+
+                        <a href="pages/iluminacao.html">
+                            Iluminação
+                        </a>
+
+                        <a href="pages/utilidades.html">
+                            Utilidades
+                        </a>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- BUSCA -->
+
+        <div class="search-box">
+
+            <input type="text" placeholder="Buscar produtos...">
+
+            <button>
+                Buscar
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="swiper hero-slider">
+
+            <div class="swiper-wrapper">
+
+                <!-- SLIDE 1 -->
+
+                <div class="swiper-slide">
+
+                    <div class="hero-content">
+
+                        <!-- TEXTO -->
+
+                        <div class="hero-text">
+
+                            <span>
+                                UTILIDADES PARA SUA CASA
+                            </span>
+
+                            <h2>
+                                Produtos modernos para facilitar sua rotina
+                            </h2>
+
+                            <p>
+                                Descubra itens práticos, funcionais e acessíveis selecionados para o dia a dia.
+                            </p>
+
+                            <div class="hero-buttons">
+
+                                <a href="pages/destaques.html" class="primary-button">
+                                    Ver Destaques
+                                </a>
+
+                                <a href="#" class="secondary-button">
+                                    Explorar Categorias
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- IMAGEM -->
+
+                        <div class="hero-image">
+
+                            <img src="images/banner1.png" alt="Banner CasaMix">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- SLIDE 2 -->
+
+                <div class="swiper-slide">
+
+                    <div class="hero-content">
+
+                        <div class="hero-text">
+
+                            <span>
+                                ORGANIZAÇÃO INTELIGENTE
+                            </span>
+
+                            <h2>
+                                Transforme seus ambientes com praticidade
+                            </h2>
+
+                            <p>
+                                Organizadores, acessórios e soluções modernas para deixar tudo no lugar.
+                            </p>
+
+                            <div class="hero-buttons">
+
+                                <a href="pages/destaques.html" class="primary-button">
+                                    Ver Produtos
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="hero-image">
+
+                            <img src="images/banner2.png" alt="Organização CasaMix">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- SLIDE 3 -->
+
+                <div class="swiper-slide">
+
+                    <div class="hero-content">
+
+                        <div class="hero-text">
+
+                            <span>
+                                DECORAÇÃO & ILUMINAÇÃO
+                            </span>
+
+                            <h2>
+                                Detalhes que transformam sua casa
+                            </h2>
+
+                            <p>
+                                Itens modernos e aconchegantes para criar ambientes mais bonitos e funcionais.
+                            </p>
+
+                            <div class="hero-buttons">
+
+                                <a href="pages/destaques.html" class="primary-button">
+                                    Explorar Agora
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="hero-image">
+
+                            <img src="images/banner3.png" alt="Decoração CasaMix">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PAGINAÇÃO -->
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <!-- MINI CATEGORIAS -->
+
+    <section class="mini-categories">
+
+        <!-- TÍTULO -->
+
+        <div class="section-title">
+
+            <h2>
+                Categorias Populares
+            </h2>
+
+            <p>
+                Explore produtos organizados para cada necessidade da sua casa.
+            </p>
+
+        </div>
+
+        <!-- GRID -->
+
+        <div class="categories-grid">
+
+            <!-- ITEM -->
+
+            <a href="pages/cozinha.html" class="category-card">
+
+                <img src="images/icons/cozinha.png" alt="Cozinha">
+
+                <span>
+                    Cozinha
+                </span>
+
+            </a>
+
+            <!-- ITEM -->
+
+            <a href="pages/organizacao.html" class="category-card">
+
+                <img src="images/icons/organizacao.png" alt="Organização">
+
+                <span>
+                    Organização
+                </span>
+
+            </a>
+
+            <!-- ITEM -->
+
+            <a href="pages/decoracao.html" class="category-card">
+
+                <img src="images/icons/decoracao.png" alt="Decoração">
+
+                <span>
+                    Decoração
+                </span>
+
+            </a>
+
+            <!-- ITEM -->
+
+            <a href="pages/iluminacao.html" class="category-card">
+
+                <img src="images/icons/iluminacao.png" alt="Iluminação">
+
+                <span>
+                    Iluminação
+                </span>
+
+            </a>
+
+            <!-- ITEM -->
+
+            <a href="pages/utilidades.html" class="category-card">
+
+                <img src="images/icons/utilidades.png" alt="Utilidades">
+
+                <span>
+                    Utilidades
+                </span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- SWIPER JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- SCRIPT -->
+
+    <script>
+
+        const swiper = new Swiper(".hero-slider", {
+
+            loop: true,
+
+            autoplay: {
+
+                delay: 5000,
+
+                disableOnInteraction: false,
+
+            },
+
+            pagination: {
+
+                el: ".swiper-pagination",
+
+                clickable: true,
+
+            },
+
+        });
+
+    </script>
+
+</body>
+
+</html>
