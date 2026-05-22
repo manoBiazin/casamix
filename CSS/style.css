@@ -588,67 +588,153 @@ body{
 @media (max-width: 1024px){
 
     .hero-content{
-
         flex-direction: column;
-
         justify-content: center;
-
         text-align: center;
-
         gap: 50px;
-
         height: auto;
-
         padding: 80px 5%;
-
     }
 
     .hero-slider{
-
         height: auto;
-
     }
 
     .hero-text{
-
         width: 100%;
-
     }
 
     .hero-text h2{
-
         font-size: 3rem;
-
     }
 
     .hero-text p{
-
         max-width: 100%;
-
     }
 
     .hero-buttons{
-
         justify-content: center;
-
     }
 
     .hero-image{
-
         width: 100%;
-
     }
 
     .hero-image img{
-
         max-width: 450px;
-
     }
 
     .categories-grid{
-
         grid-template-columns: repeat(3, 1fr);
+    }
 
+}
+
+@media (max-width: 768px){
+
+    /* HEADER LADO A LADO */
+    .header{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 15px 4%;
+    }
+
+    .logo{
+        order: 1;
+    }
+
+    .nav-menu{
+        order: 2;
+    }
+
+    .nav-menu ul{
+        gap: 15px;
+    }
+
+    /* BUSCA NA LINHA DE BAIXO BEM AJUSTADA */
+    .search-box{
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .search-box input{
+        width: 100%;
+        max-width: none;
+        flex: 1;
+    }
+
+    /* HERO */
+    .hero-content{
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 5%;
+        gap: 40px;
+    }
+
+    .hero-text{
+        width: 100%;
+    }
+
+    .hero-text h2{
+        font-size: 2.4rem;
+    }
+
+    .hero-text p{
+        font-size: 1rem;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-image{
+        width: 100%;
+    }
+
+    .hero-image img{
+        max-width: 320px;
+    }
+
+    /* MINI CATEGORIAS */
+    .mini-categories{
+        padding: 60px 5%;
+    }
+
+    .section-title h2{
+        font-size: 2rem;
+    }
+
+    .categories-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 480px){
+
+    /* AJUSTES EXTRAS PARA TELAS MUITO PEQUENAS */
+    .header{
+        gap: 10px;
+    }
+
+    .nav-menu ul{
+        gap: 10px;
+    }
+
+    .nav-menu a, .dropdown-button{
+        font-size: 0.9rem;
+    }
+
+    .hero-text h2{
+        font-size: 2rem;
+    }
+
+    .categories-grid{
+        grid-template-columns: 1fr;
     }
 
 }
