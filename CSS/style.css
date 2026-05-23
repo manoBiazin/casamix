@@ -10,15 +10,15 @@
 
 :root{
 
-    --primary-color: #ee4d2d;
+    --primary-color: #4f5b4a;
 
     --secondary-color: #ffffff;
 
-    --background-color: #f5f5f5;
+    --background-color: #f6f4ef;
 
-    --text-color: #222222;
+    --text-color: #2a2a2a;
 
-    --hover-color: #d84324;
+    --hover-color: #3d4738;
 
 }
 
@@ -74,7 +74,7 @@ body{
 
 .logo img{
 
-    width: 70px;
+    width: 220px;
 
     object-fit: contain;
 
@@ -870,5 +870,175 @@ body{
         grid-template-columns: 1fr;
 
     }
+
+}
+
+/* PRODUTOS */
+
+.featured-products{
+
+    width: 100%;
+
+    padding: 90px 5%;
+
+    background-color: #ffffff;
+
+}
+
+/* GRID */
+
+.products-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+
+}
+
+/* CARD */
+
+.product-card{
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+
+    transition: 0.3s;
+
+}
+
+.product-card:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+
+}
+
+/* IMAGEM */
+
+.product-image{
+
+    width: 100%;
+
+    height: 260px;
+
+    background-color: #f8f8f8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.product-image img{
+
+    width: 85%;
+
+    max-height: 220px;
+
+    object-fit: contain;
+
+}
+
+/* INFO */
+
+.product-info{
+
+    padding: 25px;
+
+}
+
+/* CATEGORIA */
+
+.product-category{
+
+    font-size: 0.85rem;
+
+    color: var(--primary-color);
+
+    font-weight: 600;
+
+}
+
+/* TÍTULO */
+
+.product-info h3{
+
+    font-size: 1.1rem;
+
+    color: var(--text-color);
+
+    margin: 15px 0;
+
+    line-height: 1.5;
+
+}
+
+/* PREÇO */
+
+.product-price{
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    color: var(--text-color);
+
+    margin-bottom: 25px;
+
+}
+
+/* BOTÃO */
+
+.product-button{
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 14px;
+
+    background-color: var(--primary-color);
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+
+}
+
+.product-button:hover{
+
+    background-color: var(--hover-color);
+
+}
+
+.products-grid{
+
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.products-grid{
+
+    grid-template-columns: 1fr;
 
 }
